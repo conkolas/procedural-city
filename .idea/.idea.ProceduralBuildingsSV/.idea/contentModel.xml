@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GeneralScripts" t="Include">
+            <e p="CameraControls.cs" t="Include" />
+          </e>
+          <e p="ModularMeshTools" t="Include">
+            <e p="BuildingPainter.cs" t="Include" />
+            <e p="BuildingPainterEditor.cs" t="Include" />
+            <e p="BuildTrigger.cs" t="Include" />
+            <e p="CleanUp.cs" t="Include" />
+            <e p="CleanUpEditor.cs" t="Include" />
+            <e p="MarchingSquares.cs" t="Include" />
+            <e p="Shape.cs" t="Include" />
+            <e p="WallStyle.cs" t="Include" />
+          </e>
+          <e p="PolygonStock" t="Include">
+            <e p="BuildingParameters.cs" t="Include" />
+            <e p="PolygonStock.cs" t="Include" />
+            <e p="PolygonStockEditor.cs" t="Include" />
+            <e p="PolygonStockParameters.cs" t="Include" />
+            <e p="Row.cs" t="Include" />
+            <e p="RowEditor.cs" t="Include" />
+          </e>
+          <e p="ShapeBuilder" t="Include">
+            <e p="ExtensionMethods.cs" t="Include" />
+            <e p="ShapeBuilder.cs" t="Include" />
+            <e p="ShapeBuilderEditor.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="ProceduralBuildingsSV.sln" t="IncludeFlat" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_ProceduralBuildingsSV.-1930800486.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+  </component>
+</project>
