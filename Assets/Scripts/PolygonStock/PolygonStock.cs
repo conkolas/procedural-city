@@ -101,9 +101,5 @@ public class PolygonStock : Shape {
         {
             DestroyImmediate(transform.GetChild(i).gameObject);
         }
-
-        if (m_ShapeBuilder != null) {
-            m_ShapeBuilder.Clear();
-        }
     }
 }

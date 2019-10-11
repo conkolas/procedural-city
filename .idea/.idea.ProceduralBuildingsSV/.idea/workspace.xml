@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b1cf42-5446-4d93-bbe5-d2e0119a6438" name="Default Changelist" comment="" />
+    <list default="true" id="94b1cf42-5446-4d93-bbe5-d2e0119a6438" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProceduralBuildingsSV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CrashedAssetImports.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/2083dd-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/2083dd-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/ebe994-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/ebe994-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/89/8947bf10185ad4968b5e045068e31a0a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/89/8947bf10185ad4968b5e045068e31a0a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e665f4d450807422ca4d898ffce2a883" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e6/e665f4d450807422ca4d898ffce2a883" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e9/e9b20602bb4aa4848823093d8c94379f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e9/e9b20602bb4aa4848823093d8c94379f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-af219f5d2191043bda59e184d5fd4d15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/MarchingSquares.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/BuildingPainterEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/19D5BA23-7C6B-4D44-924B-3DF643FAE0EC/c5/96b8a26a/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStockEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/WallStyle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/Shape.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/BuildTrigger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/CleanUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/BuildingPainter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneralScripts/CameraControls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStockParameters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/BuildingPainter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/WallStyle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/19D5BA23-7C6B-4D44-924B-3DF643FAE0EC/c5/96b8a26a/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/MarchingSquares.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/CleanUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/BuildingPainterEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStockEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,12 +67,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonBuilding/PolygonBuildingEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ModularMeshTools/Shape.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonBuilding/PolygonBuilding.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonBuilding/BuildingBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonStock/ShapeParameters.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStockParameters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PolygonStock/PolygonStock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilderEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShapeBuilder/ShapeBuilder.cs" />
       </list>
     </option>
   </component>
@@ -103,6 +128,7 @@
       <workItem from="1570013905652" duration="2784000" />
       <workItem from="1570475534589" duration="12558000" />
       <workItem from="1570550930308" duration="17350000" />
+      <workItem from="1570620076310" duration="2290000" />
     </task>
     <servers />
   </component>
@@ -111,6 +137,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

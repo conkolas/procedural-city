@@ -42,6 +42,8 @@ public class PolygonBuilderEditor : Editor {
         EditorGUILayout.PropertyField(m_ShapePreset);
         serializedObject.ApplyModifiedProperties();
 
+        Tools.current = m_ShapeBuidler.LockMovement ? Tool.None : Tool.Move;
+
         switch (m_ShapeBuidler.ShapePreset) {
             case ShapePreset.RECTANGLE:
                 EditorGUI.BeginChangeCheck();
@@ -94,7 +96,7 @@ public class PolygonBuilderEditor : Editor {
         } else if (guiEvent.type == EventType.Layout) {
             HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
         } else {
-            if (m_ShapeBuidler.ShapePreset == ShapePreset.CUSTOM) {
+            if (!m_ShapeBuidler.LockEdit && m_ShapeBuidler.ShapePreset == ShapePreset.CUSTOM) {
                 HandleInput(guiEvent);
             }
             if (m_NeedsRepaint) {
@@ -114,7 +116,7 @@ public class PolygonBuilderEditor : Editor {
         Vector3 transformPosition = m_ShapeBuidler.transform.position;
         Color oldColor = Handles.color;
         for (int i = 0; i < m_ShapeBuidler.Points.Count; i++) {
-            if (m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM) {
+            if (m_ShapeBuidler.LockEdit || m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM) {
                 Handles.color = Color.white;
             } else if (i == m_SelectionInfo.PointIndex) {
                 Handles.color = m_SelectionInfo.IsPointSelected ? m_ShapeBuidler.SelectedHandleColor : m_ShapeBuidler.HoveredHandleColor;
@@ -124,11 +126,11 @@ public class PolygonBuilderEditor : Editor {
             Handles.DrawSolidDisc(m_ShapeBuidler.Points[i] + transformPosition, Vector3.up, m_ShapeBuidler.HandleRadius);
 
             if (i == m_SelectionInfo.LineIndex) {
-                Handles.color = m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM ? Color.green : m_ShapeBuidler.HoveredLineColor;
+                Handles.color = m_ShapeBuidler.LockEdit || m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM ? Color.green : m_ShapeBuidler.HoveredLineColor;
                 Vector3 nextPoint = m_ShapeBuidler.Points[(i + 1) % m_ShapeBuidler.Points.Count];
                 Handles.DrawLine(m_ShapeBuidler.Points[i] + transformPosition, nextPoint + transformPosition);
             } else {
-                Handles.color = m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM ? Color.green : m_ShapeBuidler.LineColor;
+                Handles.color = m_ShapeBuidler.LockEdit || m_ShapeBuidler.ShapePreset != ShapePreset.CUSTOM ? Color.green : m_ShapeBuidler.LineColor;
                 Vector3 nextPoint = m_ShapeBuidler.Points[(i + 1) % m_ShapeBuidler.Points.Count];
                 Handles.DrawDottedLine(m_ShapeBuidler.Points[i] + transformPosition, nextPoint + transformPosition, m_ShapeBuidler.LineDensity);
             }
@@ -141,7 +143,11 @@ public class PolygonBuilderEditor : Editor {
         Vector3 transformPosition = m_ShapeBuidler.transform.position;
 
         Vector3 mousePosition = GetMousePosition(guiEvent) - transformPosition;
-
+        Vector3 pointerPosition = new Vector3(mousePosition.x, 0, mousePosition.z);
+        if (m_ShapeBuidler.RoundEditCoordinates) {
+            pointerPosition.x = Mathf.RoundToInt(pointerPosition.x);
+            pointerPosition.z = Mathf.RoundToInt(pointerPosition.z);
+        }
         if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 &&
             guiEvent.modifiers == EventModifiers.Shift) {
             DeletePointUnderMouse();
@@ -149,17 +155,17 @@ public class PolygonBuilderEditor : Editor {
 
         if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 &&
             guiEvent.modifiers == EventModifiers.None) {
-            HandleLeftMouseDown(mousePosition);
+            HandleLeftMouseDown(pointerPosition);
         }
 
         if (guiEvent.type == EventType.MouseUp && guiEvent.button == 0 &&
             guiEvent.modifiers == EventModifiers.None) {
-            HandleLeftMouseUp(mousePosition);
+            HandleLeftMouseUp(pointerPosition);
         }
 
         if (guiEvent.type == EventType.MouseDrag && guiEvent.button == 0 &&
             guiEvent.modifiers == EventModifiers.None) {
-            HandleLeftMouseDrag(mousePosition);
+            HandleLeftMouseDrag(pointerPosition);
         }
 
         if (!m_SelectionInfo.IsPointSelected) {
@@ -173,7 +179,7 @@ public class PolygonBuilderEditor : Editor {
                 ? m_SelectionInfo.LineIndex + 1
                 : m_ShapeBuidler.Points.Count;
             Undo.RecordObject(m_ShapeBuidler, "Add point");
-            m_ShapeBuidler.Points.Insert(pointIndex, new Vector3(Mathf.RoundToInt(mousePosition.x), 0, Mathf.RoundToInt(mousePosition.z)));
+            m_ShapeBuidler.Points.Insert(pointIndex, mousePosition);
             m_SelectionInfo.PointIndex = pointIndex;
             m_ShapeBuidler.OnPolygonUpdate?.Invoke();
         }
@@ -188,7 +194,7 @@ public class PolygonBuilderEditor : Editor {
         if (m_SelectionInfo.IsPointSelected) {
             m_ShapeBuidler.Points[m_SelectionInfo.PointIndex] = m_SelectionInfo.StartDragPosition;
             Undo.RecordObject(m_ShapeBuidler, "Move point");
-            m_ShapeBuidler.Points[m_SelectionInfo.PointIndex] = new Vector3(Mathf.RoundToInt(mousePosition.x), 0, Mathf.RoundToInt(mousePosition.z));
+            m_ShapeBuidler.Points[m_SelectionInfo.PointIndex] = mousePosition;
 
             m_SelectionInfo.IsPointSelected = false;
             m_SelectionInfo.PointIndex = -1;
@@ -199,9 +205,7 @@ public class PolygonBuilderEditor : Editor {
 
     private void HandleLeftMouseDrag (Vector3 mousePosition) {
         if (m_SelectionInfo.IsPointSelected) {
-            Vector3 newPosition = new Vector3(Mathf.RoundToInt(mousePosition.x), 0,
-                Mathf.RoundToInt(mousePosition.z));
-            m_ShapeBuidler.Points[m_SelectionInfo.PointIndex] = newPosition;
+            m_ShapeBuidler.Points[m_SelectionInfo.PointIndex] = mousePosition;
             m_NeedsRepaint = true;
         }
     }
@@ -210,7 +214,8 @@ public class PolygonBuilderEditor : Editor {
         Ray mouseRay = HandleUtility.GUIPointToWorldRay(guiEvent.mousePosition);
         float drawPlaneHeight = 0f;
         float distanceToDrawPlane = (drawPlaneHeight - mouseRay.origin.y) / mouseRay.direction.y;
-        return  mouseRay.GetPoint(distanceToDrawPlane);
+
+        return mouseRay.GetPoint(distanceToDrawPlane);
     }
 
     private void UpdateMouseHoverSelection(Vector3 mousePosition) {

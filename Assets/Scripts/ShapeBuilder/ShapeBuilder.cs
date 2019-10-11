@@ -26,10 +26,14 @@ public class ShapeBuilder : MonoBehaviour {
     [HideInInspector]
     public bool RoundCoordinates = true;
 
-    public UnityEvent OnPolygonUpdate;
-
     [Header("Editor settings")]
+    [Space]
+    public UnityEvent OnPolygonUpdate;
+    public bool LockEdit;
+    public bool LockMovement;
+    public bool RoundEditCoordinates = true;
 
+    [Header("GUI settings")]
     [Space]
     [Range(0.01f, 1f)]
     public float HandleRadius = .3f;
@@ -66,6 +70,21 @@ public class ShapeBuilder : MonoBehaviour {
             }
             Points.Add(new Vector3(x, 0, y));
         }
+    }
+
+    public void SetEditMode() {
+        LockEdit = false;
+        LockMovement = true;
+    }
+
+    public void SetMoveMode() {
+        LockEdit = true;
+        LockMovement = false;
+    }
+
+    public void SetDisabledMode() {
+        LockEdit = true;
+        LockMovement = true;
     }
 
     public void Clear() {
