@@ -75,31 +75,31 @@
      <Compile Include="Assets\Scripts\ShapeBuilder\ShapeBuilder.cs" />
      <Compile Include="Assets\Scripts\ShapeBuilder\ShapeBuilderEditor.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/ai/Downloads/ProceduralBuildingsSV/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/ai/Documents/University/2.1/Procedural Art/ProceduralBuildingsSV/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
